@@ -8,8 +8,8 @@ const isAduit = function () {
     }
     alert("Go growin");
   };
-  isAduit();
-  
+  isAduit(); 
+   
   const checkMultiplicity = function () {
     const numb1 = +prompt("Enter number 1");
     const numb2 = +prompt("Enter number 2");
