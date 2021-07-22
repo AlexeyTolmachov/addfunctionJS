@@ -1,45 +1,32 @@
-const isAduit = function () {
+
+const isAdult = function (userAge) {
     const nowYear = 2021;
-    const userAge = +prompt("Enter your year of birth");
     const age = nowYear - userAge;
-    if (age >= 18) {
-      alert("Welcomne");
-      return age;
+    if (isNaN(userAge)){
+        return null ;
     }
-    alert("Go growin");
+    return age >= 18;
   };
-  isAduit(); 
+  isAdult(); 
    
-  const checkMultiplicity = function () {
-    const numb1 = +prompt("Enter number 1");
-    const numb2 = +prompt("Enter number 2");
-    if (numb1 % numb2 === 0) {
-      alert("true");
-      return;
+  const checkMultiplicity = function (numb1, numb2) {
+    if (isNaN(numb1 - numb2 )){
+        return null ;
     }
-    alert("false");
+      return numb1 % numb2 === 0;
   };
   checkMultiplicity();
-  const existenceOfATriangle = function () {
-    const a = +prompt("Enter side length a");
-    const b = +prompt("Enter side length b");
-    const c = +prompt("Enter side length c");
-    if (a + b >= c)
-      if (a + c >= b)
-        if (b + c >= a) {
-          alert("True");
-        }
-    {
-      alert("false");
-    }
+  const existenceOfATriangle = function (a, b ,c) {
+    if (isNaN(a - b - c)){
+        return null ;
+    }  
+          return a + b >= c && a + c >= b && b + c >= a
   };
-  existenceOfATriangle();
+//   existenceOfATriangle();
   
-  const areaOfARhombus = function () {
-      const  a = +prompt('enter side a rombus');
-      const  b = +prompt('enter side b rombus');
-      const  c = +prompt('enter side c rombus');
-      const  d = +prompt('enter side d rombus');
+//   const areaOfARhombus = function () {
+//       const  a = +prompt('enter side a rombus');
+     
       
       
-  }
+//   }
