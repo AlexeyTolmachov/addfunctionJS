@@ -26,12 +26,12 @@ const isAdult = function (userAge) {
     if (isNaN(a - h)) {
       return null; 
     }
-    return a*h ; 
+    return a*h ;  
   };
 
   const cylinderArea = function (r, h) {
    if( isNaN(r -h)) {
-     return null;
+     return null; 
    }
     return  6.28 * r *(h + r);
   };
