@@ -10,7 +10,7 @@ const isAdult = function (userAge) {
    
   const checkMultiplicity = function (numb1, numb2) {
     if (isNaN(numb1 - numb2 )){
-        return null ;
+        return null;
     }
       return numb1 % numb2 === 0;
   };
@@ -49,3 +49,9 @@ const isAdult = function (userAge) {
     }
     return a * b ;  
   };
+ 
+
+
+    
+  
+  
